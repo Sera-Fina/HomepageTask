@@ -198,6 +198,10 @@ a.numberLink:hover {
     background-image: url(files/9form/BG.png);
 }
 
+.errLabel {
+    display: none;
+}
+
 .sponsors {
     padding-top: 55px;
     padding-bottom: 55px;
