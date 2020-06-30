@@ -15,7 +15,7 @@
     <section class='header'>
         <div class='container'>
             <div class='row'>
-                <div class='col-lg-3'>
+                <div class='col-lg-4 col-md-5 col-sm-6'>
                     <p class='grey'> We make your home more quality.</p>
                 </div>
                 <div class='col-lg-2 ml-auto'>
@@ -31,27 +31,40 @@
     <section class='bar'>
         <div class='container'>
             <div class='row'>
-                <div class='col-lg-4 col-md-12 col-sm-12 d-flex flex-row align-items-center'>
-                    <div>
-                        <img src='files/2bar/shape.png'>
-                    </div>
-                    <div class='d-flex flex-column'>
-                        <img src='files/2bar/AUHandy.png'>
-                        <img src='files/2bar/WeRepairEverything.png'>
-                    </div>
+                <div class='col-lg-4'>
+                    <img src='files/2bar/shape.png'>
                 </div>
 
-                <div
-                    class='col-lg-6 col-md-12 col-sm-12 ml-auto d-flex flex-wrap justify-content-around align-items-center nav'>
-                    <a href='#'> Home </a>
-                    <a href='homepage.html#ourServices'> Services </a>
-                    <a href='homepage.html#ourProjects'> Projects </a>
-                    <a href='#'> Pages </a>
-                    <a href='#'> Blog </a>
-                    <a href='homepage.html#contacts'> Contact </a>
-                    <a href='#'><i class="fa fa-search"></i></a>
+                <div class='dropdown col-lg-2 ml-lg-auto barButton'>
+                    <button class='btn dropdown-toggle' data-toggle='dropdown'><i class="fa fa-bars"></i></button>
+                    <ul class='dropdown-menu'>
+                        <li class='nav-item'><a class='nav-link' href='#'> Home </a></li>
+                        <li class='nav-item'><a class='nav-link' href='homepage.html#ourServices'> Services </a></li>
+                        <li class='nav-item'><a class='nav-link' href='homepage.html#ourProjects'> Projects </a></li>
+                        <li class='nav-item'><a class='nav-link' href='#'> Pages </a></li>
+                        <li class='nav-item'><a class='nav-link' href='#'> Blog </a></li>
+                        <li class='nav-item'><a class='nav-link' href='homepage.html#contacts'> Contact </a></li>
+                        <li class='nav-item'><a class='nav-link' href='#'><i class='fa fa-search'></i></a></li>
+                    </ul>
                 </div>
+
+                <nav class='col-lg-6 ml-auto navbar-expand-lg navbar-light navBar'>
+                    <div class='collapse navbar-collapse' id='navbarNavDropdown'>
+                        <ul class='navbar-nav'>
+                            <li class='nav-item'><a class='nav-link' href='#'> Home </a></li>
+                            <li class='nav-item'><a class='nav-link' href='homepage.html#ourServices'> Services </a>
+                            </li>
+                            <li class='nav-item'><a class='nav-link' href='homepage.html#ourProjects'> Projects </a>
+                            </li>
+                            <li class='nav-item'><a class='nav-link' href='#'> Pages </a></li>
+                            <li class='nav-item'><a class='nav-link' href='#'> Blog </a></li>
+                            <li class='nav-item'><a class='nav-link' href='homepage.html#contacts'> Contact </a></li>
+                            <li class='nav-item'><a class='nav-link' href='#'><i class='fa fa-search'></i></a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
+        </div>
     </section>
 
     <section class='slider'>
@@ -109,7 +122,8 @@
                     <div class='col-lg-12 d-flex flex-wrap align-items-start'>
                         <h2 class='col-lg-12 b'> Why Choose Us </h2>
                         <img class='mb-4' src='files/5why/line.png'>
-                        <p class='col-lg-12 black'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        <p class='col-lg-12 black'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod
                             tempor
                             incididunt ut
                             labore
@@ -338,7 +352,8 @@
                                 placeholder='Description Services Needed'>
                         </div>
                     </form>
-                    <button type='submit' id='formButton' class='btn btn-warning btn-lg mt-4'> Submit </button>
+                    <button type='submit' id='formButton' class='btn btn-warning btn-lg mt-4' data-toggle="modal"
+                        data-target="#myModal"> Submit </button>
                 </div>
             </div>
     </section>
@@ -359,47 +374,48 @@
     <section class='contacts' id='contacts'>
         <div class='container'>
             <div class='row'>
-                    <div class='col-lg-4 d-flex flex-wrap align-items-center'>
-                        <h2 class='col-lg-12 greyUppercase mb-4'> Contact Us </h2>
-                        <a href='tel:+1235678596' class='col-lg-12 grey mb-2'> <i class='fa fa-mobile-phone'></i> +1 23
-                            567 8596 <br>
-                            Support 24/7 Weekdays </a>
-                        <a href='#' class='col-lg-12 grey mb-2'> <i class='fa fa-map-marker'></i> Auhandy Tower, New York, NY
-                            10013, USA </a>
-                        <a href='#' class='col-lg-12 grey mb-2'> <i class='fa fa-envelope'></i> info@example.com </a>
-                        <a href='#' class='col-lg-12 grey mb-2'> <i class='fa fa-clock-o'></i> Weekdays: 09:00am -
-                            06:00pm <br> Support 24/7 Weekdays </a>
-                    </div>
+                <div class='col-lg-4 d-flex flex-wrap align-items-center'>
+                    <h2 class='col-lg-12 greyUppercase mb-4'> Contact Us </h2>
+                    <a href='tel:+1235678596' class='col-lg-12 grey mb-2'> <i class='fa fa-mobile-phone'></i> +1 23
+                        567 8596 <br>
+                        Support 24/7 Weekdays </a>
+                    <a href='#' class='col-lg-12 grey mb-2'> <i class='fa fa-map-marker'></i> Auhandy Tower, New York,
+                        NY
+                        10013, USA </a>
+                    <a href='#' class='col-lg-12 grey mb-2'> <i class='fa fa-envelope'></i> info@example.com </a>
+                    <a href='#' class='col-lg-12 grey mb-2'> <i class='fa fa-clock-o'></i> Weekdays: 09:00am -
+                        06:00pm <br> Support 24/7 Weekdays </a>
+                </div>
 
-                    <div class='col-lg-4 d-flex flex-wrap justify-content-between'>
-                        <h2 class='col-lg-12 greyUppercase'> Our Services </h2>
-                        <div class='col-lg-12 d-flex grey'>
-                            <ul class='col-lg-5'>
-                                <li> Electrical </li>
-                                <li> Electrical </li>
-                                <li> Electrical </li>
-                                <li> Electrical </li>
-                                <li> Electrical </li>
-                                <li> Electrical </li>
+                <div class='col-lg-4 d-flex flex-wrap justify-content-between'>
+                    <h2 class='col-lg-12 greyUppercase'> Our Services </h2>
+                    <div class='col-lg-12 d-flex grey'>
+                        <ul class='col-lg-5'>
+                            <li> Electrical </li>
+                            <li> Electrical </li>
+                            <li> Electrical </li>
+                            <li> Electrical </li>
+                            <li> Electrical </li>
+                            <li> Electrical </li>
 
-                            </ul>
-                            <ul class='col-lg-5 ml-auto'>
-                                <li> Electrical </li>
-                                <li> Electrical </li>
-                                <li> Electrical </li>
-                                <li> Electrical </li>
-                                <li> Electrical </li>
-                                <li> Electrical </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class='col-lg-4'>
-                        <div>
-                            <img class='img-fluid' src='files/11contacts/discount.png'>
-                        </div>
+                        </ul>
+                        <ul class='col-lg-5 ml-auto'>
+                            <li> Electrical </li>
+                            <li> Electrical </li>
+                            <li> Electrical </li>
+                            <li> Electrical </li>
+                            <li> Electrical </li>
+                            <li> Electrical </li>
+                        </ul>
                     </div>
                 </div>
+
+                <div class='col-lg-4'>
+                    <div>
+                        <img class='img-fluid' src='files/11contacts/discount.png'>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <section class='footer'>
@@ -409,6 +425,20 @@
             </div>
         </div>
     </section>
+
+    <div id='myModal' class='modal fade'>
+        <div class='modal-dialog'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <button class='close' data-dismiss='modal'><i class="fa fa-times"></i></button>
+                </div>
+                <div class='modal-body'>
+                    <p class='text-center'>Если Вы заполнили форму правильно, то в течение рабочей недели с Вами
+                        свяжется оператор</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src='https://code.jquery.com/jquery-3.5.1.slim.min.js'
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

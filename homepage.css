@@ -1,19 +1,24 @@
-/* change to scss */
+@media screen and (max-device-width: 1195px) {   
+    .barButton {
+        display: flex !important;
+    }
+
+    .navBar {
+        display: none; 
+    }
+}
 
 @media screen and (max-device-width: 540px) {
     iframe {
         width: 300px;
         height: 300px;
-    }    
-
-    .nav a {
-        width: 100%;
     }
 }
 /* Спецификации */
 body {
     font-family: 'Lato Regular';
 }
+
 section {
     width: 100%;
     background-size: cover;
@@ -24,25 +29,13 @@ a {
     cursor:pointer; 
 }
 
-.header a { 
-    font-family: 'Lato Bold';
-    font-size: large;    
-    text-transform: uppercase;
-    color: rgb(102, 102, 102);
-}
-
-.bar a { 
-    font-family: 'Lato Bold';
-    font-size: large;    
-    text-transform: uppercase;
-    color: rgb(102, 102, 102);
-}
-
 input {
     height: 55px !important;
 
     border: none;    
 }
+
+
 
 /* fonts */
 h1 {
@@ -95,14 +88,34 @@ h1 {
     text-transform: uppercase;
 }
 
+/* Секции */
+
 .header {
     padding-top: 10px;
     background-color:  rgb(242, 242, 242);
 }
 
+.header a { 
+    font-family: 'Lato Bold';
+    font-size: large;    
+    text-transform: uppercase;
+    color: rgb(102, 102, 102);
+}
+
 .bar {
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+.bar a { 
+    font-family: 'Lato Bold';
+    font-size: large;    
+    text-transform: uppercase;
+    color: rgb(102, 102, 102);
+}
+
+.barButton{
+    display: none;
 }
 
 .slider {
