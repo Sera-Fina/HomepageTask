@@ -1,6 +1,6 @@
 @media screen and (max-device-width: 1195px) {   
     .barButton {
-        display: flex !important;
+        display: flex !important;        
     }
 
     .navBar {
@@ -14,9 +14,13 @@
         height: 300px;
     }
 }
-/* Спецификации */
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Lato Regular';
+    font-family: 'Roboto', sans-serif;
 }
 
 section {
@@ -26,90 +30,48 @@ section {
 
 a {
     text-decoration: none!important;
-    cursor:pointer; 
+    cursor: pointer; 
+}
+
+a:hover {
+    color: rgb(102, 102, 102) !important;
 }
 
 input {
-    height: 55px !important;
-
+    height: 65px !important;
     border: none;    
 }
 
-
-
-/* fonts */
-h1 {
-    font-family: 'Lato Black';
-    color: white;
+#servicesNeeded {
+    height: 100px !important;
 }
 
-.w {
-    font-family: 'Lato Black';
-    color: white;
+h2 {
     text-transform: uppercase;
 }
 
-.b {
-    font-family: 'Lato Black';
-    color: black;
-    text-transform: uppercase;
+span {
+    color: rgb(142, 104, 6);
 }
-
-.white {
-    font-family: 'Lato Regular';
-    color: white;
-    font-size: medium;
-}
-
-.black {
-    font-family: 'Lato Regular';   
-    color: black;
-}
-
-.grey {
-    font-family: 'Lato Regular'; 
-    color: rgb(128, 128, 128);
-}
-
-.greyUppercase {
-    font-family: 'Lato Regular'; 
-    color: rgb(128, 128, 128);
-    text-transform: uppercase;
-}
-
-.yellow {
-    font-family: 'Lato Regular'; 
-    color: rgb(255, 182, 25);
-}
-
-.yellowUppercase {
-    font-family: 'Lato Regular'; 
-    color: rgb(255, 182, 25);
-    text-transform: uppercase;
-}
-
 /* Секции */
 
-.header {
+.header {  
     padding-top: 10px;
+       
+    color: rgb(102, 102, 102);
+
     background-color:  rgb(242, 242, 242);
 }
 
-.header a { 
-    font-family: 'Lato Bold';
-    font-size: large;    
-    text-transform: uppercase;
+.header a {
     color: rgb(102, 102, 102);
 }
 
 .bar {
     padding-top: 25px;
     padding-bottom: 25px;
-}
 
-.bar a { 
-    font-family: 'Lato Bold';
-    font-size: large;    
+    font-size: large;
     text-transform: uppercase;
     color: rgb(102, 102, 102);
 }
@@ -122,29 +84,28 @@ h1 {
     padding-top: 150px;
     padding-bottom: 150px;
 
+    color: white;
     background-image: url(files/3slider/BG.png)
+}
+
+.slider a {
+    color: white;
 }
 
 .numberSection {
     padding-top: 45px;
     padding-bottom: 45px;
 
+    color: rgb(51, 51, 51);
+
     background-image: url(files/4number/BG.png);
 }
 
-a.numberLink {    
-    transition-duration: 0.4s;
-        
-    font-family: 'Loto Black';
+a.numberLink {
     font-size: large;
     color: white;
     background-color: rgb(234, 226, 41, 0.5);
     border: 2px solid rgb(234, 226, 41 0.1);
-}
-
-a.numberLink:hover {
-    background-color: rgb(234, 226, 41);
-    color: white;
 }
 
 .why {
@@ -156,20 +117,29 @@ a.numberLink:hover {
     padding-top: 50px;
     padding-bottom: 50px;
 
+    color: white;
+
     background-image: url(files/6ourServices/BG.png);
 }
 
-.BG1 {  
-    background-color: rgb(1, 62, 153);
+.BG1 {      
+    border: 3px solid rgb(1, 62, 153);
 }
 
-.BG2 {
-    border: 3px solid rgb(1, 62, 153);
+.BG1:hover {
+    background-color: rgb(1, 62, 153);
 }
 
 .ourProjects {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 80px;    
+}
+
+.ourProjects a {
+    font-size: large;
+    text-transform: uppercase;
+
+    color: rgb(102, 102, 102);
 }
 
 .router {
@@ -184,7 +154,7 @@ a.numberLink:hover {
     background-position: 50% 50%;
 }
 
-.searchIcon {
+.teddy a, .router a {
     height: 260px;
 
     background-color: rgba(1,62,153,0.4);;
@@ -193,13 +163,19 @@ a.numberLink:hover {
     opacity: 0;
 } 
 
-.searchIcon:hover {
+.teddy a:hover, .router a:hover {
+    color: white !important;
+    text-transform: none;
+
     opacity: 1;
 }
 
 .problems {
     padding-top: 150px;
     padding-bottom: 150px;
+
+    text-transform: uppercase;
+    color: white;
 
     background-image: url(files/8problems/BG.png);
 }
@@ -224,11 +200,22 @@ a.numberLink:hover {
     padding-top: 100px;
     padding-bottom: 100px;
 
+    color: rgb(102, 102, 102);
+
     background-color: rgb(26, 26, 26);
+}
+.contacts a {
+    color: rgb(102, 102, 102);
+}
+
+.contacts h2 {
+    color: white;
 }
 
 .footer {
     padding-top: 10px;
+
+    color: rgb(102, 102, 102);
 
     background-color: rgb(13, 13, 13);
 }
