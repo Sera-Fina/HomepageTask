@@ -1,0 +1,232 @@
+@media screen and (max-device-width: 1195px) {   
+    .barButton {
+        display: flex !important;        
+    }
+
+    .navBar {
+        display: none; 
+    }
+}
+
+@mixin blocks ($padding-top, $padding-bottom) {
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;    
+
+    @content;
+}
+
+@mixin projects ($background-image, $background-size, $background-position) {
+    background-image: $background-image;
+    background-size:  $background-size;
+    background-position: $background-position;
+}
+
+@mixin projectsA {
+    height: 260px;
+
+    background-color: rgba(1,62,153,0.4);;
+    border: none;
+    
+    opacity: 0;
+}
+
+@mixin projectsHover {
+    color: white !important;
+    text-transform: none;
+
+    opacity: 1;    
+}
+
+@mixin numberLink {    
+    font-size: large;
+    color: white;
+    background-color: rgb(234, 226, 41, 0.5);
+    border: 2px solid rgb(234, 226, 41, 0.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    background-size: cover;
+}
+
+a {
+    text-decoration: none !important;
+    cursor: pointer;
+
+    &:hover {
+        color: rgb(102, 102, 102) !important;
+    }
+}
+
+input {
+    border: none;    
+}
+
+
+h2 {
+    text-transform: uppercase;
+}
+
+span {
+    color: rgb(142, 104, 6);
+}
+
+.header {
+    @include blocks (10px, 0px) {
+        color: rgb(102, 102, 102);
+        background-color:  rgb(242, 242, 242);
+    };    
+
+    a {
+        color: rgb(102, 102, 102);
+    }
+}
+
+
+.bar {
+    @include blocks (25px, 25px) {
+        color: rgb(102, 102, 102);
+        font-size: large;
+        text-transform: uppercase; 
+    };  
+    
+        .barButton {
+        display: none;
+        }   
+}
+
+.slider {
+    @include blocks (150px, 150px) {
+        color: white;
+        background-image: url(../files/3slider/BG.png);
+    }
+
+    a {
+        color: white;
+    }
+}
+
+.numberSection {
+    @include blocks (45px, 45px) {
+        color: rgb(51, 51, 51);
+        background-image: url(../files/4number/BG.png);
+    }
+    
+    .numberLink {
+        @include numberLink;
+    }
+}
+
+.why {
+    @include blocks (80px, 80px);
+}
+
+.ourServices {
+    @include blocks (50px, 50px) {
+        color: white;
+        background-image: url(../files/6ourServices/BG.png);
+    }
+}
+
+.BG1 {      
+    border: 3px solid rgb(1, 62, 153);
+
+    &:hover {
+        background-color: rgb(1, 62, 153);
+    }
+}
+
+.ourProjects {
+    @include blocks (80px, 80px);
+    
+    a {
+    font-size: large;
+    text-transform: uppercase;
+
+    color: rgb(102, 102, 102);
+    }
+}
+
+.router {
+    @include projects (url(../files/7ourProjects/router.png), cover, 50% 50%);
+
+    a {
+        @include projectsA;
+        &:hover {
+            @include projectsHover;
+        }
+    }
+}
+
+.teddy {
+    @include projects (url(../files/7ourProjects/teddy.png), cover, 50% 50%);
+
+    a {
+        @include projectsA;
+        &:hover {
+            @include projectsHover;
+        }
+    }
+}
+
+.problems {
+    @include blocks(150px, 150px) {
+        color: white;
+        background-image: url(../files/8problems/BG.png);
+        text-transform: uppercase;
+    }
+
+    .numberLink {
+        @include numberLink;
+    }
+}
+
+iframe {
+    max-width: 100%; 
+    height: 300px;
+
+    border: 0;
+}
+
+.form {
+    @include blocks(180px, 95px) {        
+    background-image: url(../files/9form/BG.png);
+    }   
+
+    .errLabel {
+        display: none;
+    }
+}
+
+.sponsors {
+    @include blocks(55px, 55px);    
+}
+
+
+.contacts {
+    @include blocks(100px, 100px) {
+        color: rgb(102, 102, 102);
+        background-color: rgb(26, 26, 26);
+    }    
+
+    a {
+        color: rgb(102, 102, 102);
+    }
+    h2 {
+    color: white;
+    }
+} 
+
+.footer {
+    @include blocks(10px, 0px) {
+        color: rgb(102, 102, 102);
+        background-color: rgb(13, 13, 13);
+    } 
+}

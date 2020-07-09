@@ -1,0 +1,203 @@
+@media screen and (max-device-width: 1195px) {
+  .barButton {
+    display: flex !important;
+  }
+
+  .navBar {
+    display: none;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  background-size: cover;
+}
+
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+a:hover {
+  color: #666666 !important;
+}
+
+input {
+  border: none;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+span {
+  color: #8e6806;
+}
+
+.header {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  color: #666666;
+  background-color: #f2f2f2;
+}
+.header a {
+  color: #666666;
+}
+
+.bar {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #666666;
+  font-size: large;
+  text-transform: uppercase;
+}
+.bar .barButton {
+  display: none;
+}
+
+.slider {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  color: white;
+  background-image: url(../files/3slider/BG.png);
+}
+.slider a {
+  color: white;
+}
+
+.numberSection {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  color: #333333;
+  background-image: url(../files/4number/BG.png);
+}
+.numberSection .numberLink {
+  font-size: large;
+  color: white;
+  background-color: rgba(234, 226, 41, 0.5);
+  border: 2px solid rgba(234, 226, 41, 0.1);
+}
+
+.why {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.ourServices {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  background-image: url(../files/6ourServices/BG.png);
+}
+
+.BG1 {
+  border: 3px solid #013e99;
+}
+.BG1:hover {
+  background-color: #013e99;
+}
+
+.ourProjects {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.ourProjects a {
+  font-size: large;
+  text-transform: uppercase;
+  color: #666666;
+}
+
+.router {
+  background-image: url(../files/7ourProjects/router.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.router a {
+  height: 260px;
+  background-color: rgba(1, 62, 153, 0.4);
+  border: none;
+  opacity: 0;
+}
+.router a:hover {
+  color: white !important;
+  text-transform: none;
+  opacity: 1;
+}
+
+.teddy {
+  background-image: url(../files/7ourProjects/teddy.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.teddy a {
+  height: 260px;
+  background-color: rgba(1, 62, 153, 0.4);
+  border: none;
+  opacity: 0;
+}
+.teddy a:hover {
+  color: white !important;
+  text-transform: none;
+  opacity: 1;
+}
+
+.problems {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  color: white;
+  background-image: url(../files/8problems/BG.png);
+  text-transform: uppercase;
+}
+.problems .numberLink {
+  font-size: large;
+  color: white;
+  background-color: rgba(234, 226, 41, 0.5);
+  border: 2px solid rgba(234, 226, 41, 0.1);
+}
+
+iframe {
+  max-width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+.form {
+  padding-top: 180px;
+  padding-bottom: 95px;
+  background-image: url(../files/9form/BG.png);
+}
+.form .errLabel {
+  display: none;
+}
+
+.sponsors {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.contacts {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #666666;
+  background-color: #1a1a1a;
+}
+.contacts a {
+  color: #666666;
+}
+.contacts h2 {
+  color: white;
+}
+
+.footer {
+  padding-top: 10px;
+  padding-bottom: 0px;
+  color: #666666;
+  background-color: #0d0d0d;
+}
+
+/*# sourceMappingURL=style.css.map */
