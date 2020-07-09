@@ -31,13 +31,9 @@ a:hover {
 }
 
 input {
-    height: 65px !important;
     border: none;    
 }
 
-#servicesNeeded {
-    height: 100px !important;
-}
 
 h2 {
     text-transform: uppercase;
